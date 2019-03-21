@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t docker-w3af .
+
+
+after_script:
+  - docker images
